@@ -1,0 +1,21 @@
+
+
+
+//Update Firebase Hosting to Support SPA Routing
+//In your firebase.json, add a rewrites rule like this:
+
+
+{
+  "hosting": {
+    "public": "build", // or "dist" depending on your framework
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+
+//This tells Firebase Hosting to serve your React app for any route (/chat, /chat/room-id, etc.), so the router can take over.
+

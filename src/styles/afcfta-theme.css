@@ -1,0 +1,60 @@
+/* src/styles/afcfta-theme.css */
+
+.afcfta-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #004225, #00793d);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 80vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.afcfta-pro-content {
+  max-width: 800px;
+}
+
+.afcfta-pro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #fffbe0;
+}
+
+.afcfta-pro h1 span {
+  color: #ffd700;
+}
+
+.afcfta-pro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.afcfta-pro p strong {
+  color: #ffffff;
+}
+
+.afcfta-icons {
+  margin-top: 24px;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #fffacd;
+}
+
+.chatbot-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #ffd700;
+  color: #004225;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background-color: #ffc107;
+}
