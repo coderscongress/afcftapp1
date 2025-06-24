@@ -1,7 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const jsx_runtime_1 = require("react/jsx-runtime");
-const AfCFTAOrderForm = () => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "order-form-container", children: [(0, jsx_runtime_1.jsx)("h1", { children: "Place Your Order" }), (0, jsx_runtime_1.jsxs)("form", { children: [(0, jsx_runtime_1.jsxs)("label", { children: ["Name:", (0, jsx_runtime_1.jsx)("input", { type: "text", required: true })] }), (0, jsx_runtime_1.jsxs)("label", { children: ["WhatsApp:", (0, jsx_runtime_1.jsx)("input", { type: "tel", placeholder: "+123456789" })] }), (0, jsx_runtime_1.jsxs)("label", { children: ["Email:", (0, jsx_runtime_1.jsx)("input", { type: "email", placeholder: "buyer@example.com" })] }), (0, jsx_runtime_1.jsxs)("label", { children: ["Address:", (0, jsx_runtime_1.jsx)("textarea", { required: true })] }), (0, jsx_runtime_1.jsxs)("div", { className: "cart-summary", children: [(0, jsx_runtime_1.jsx)("h2", { children: "Order Summary" }), (0, jsx_runtime_1.jsx)("ul", { children: (0, jsx_runtime_1.jsx)("li", { children: "Product A - 3 units" }) }), (0, jsx_runtime_1.jsx)("button", { type: "button", children: "Download TXT Receipt" }), (0, jsx_runtime_1.jsx)("button", { type: "button", children: "Download PDF Receipt" })] }), (0, jsx_runtime_1.jsx)("button", { type: "submit", children: "Submit Order" })] })] }));
-};
-exports.default = AfCFTAOrderForm;
