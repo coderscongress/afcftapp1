@@ -4,13 +4,17 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
+	"clean": "rimraf dist build",
+    "build": "npm run clean && npm run build:backend && npm run build:frontend",
+	"analyze": "webpack --config webpack.config.js --mode production --profile --json > stats.json && webpack-bundle-analyzer stats.json",
     "build:frontend": "webpack --config webpack.config.js",
     "build:backend": "tsc",
     "build": "npm run build:backend && npm run build:frontend",
     "start": "npm run build && node dist/server.js",
     "dev": "concurrently \"nodemon --watch src --exec ts-node src/server.ts\" \"webpack serve\"",
     "server": "nodemon --watch src --exec ts-node src/server.ts",
-    "client": "webpack serve --open"
+    "client": "webpack serve --open",
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "homepage": "https://coderscongress.github.io/afcftapp",
   "dependencies": {
@@ -18,6 +22,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "gh-pages": "^6.3.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jspdf": "^3.0.1",
@@ -35,6 +40,7 @@
     "@types/node": "^22.15.31",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
+    "@types/socket.io": "^3.0.1",
     "axios": "^1.9.0",
     "compression-webpack-plugin": "^11.1.0",
     "concurrently": "^9.1.2",
@@ -48,6 +54,7 @@
     "react-i18next": "^15.5.2",
     "readline-sync": "^1.4.10",
     "rimraf": "^3.0.2",
+    "socket.io": "^4.8.1",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",

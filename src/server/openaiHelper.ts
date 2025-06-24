@@ -1,28 +1,15 @@
-// server/openaiHelper.ts
+// src/server/openaiHelper.ts
+import OpenAI from 'openai';
 
-import { Configuration, OpenAIApi } from 'openai';
-
-const configuration = new Configuration({
+const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
 
-export const fetchOpenAIResponse = async (userPrompt: string): Promise<string> => {
-  const response = await openai.createChatCompletion({
-    model: 'gpt-4',
-    messages: [
-      {
-        role: 'system',
-        content: 'You are ChatGPT, a helpful assistant in a group chat about AfCFTA trade topics.',
-      },
-      {
-        role: 'user',
-        content: userPrompt,
-      },
-    ],
-    temperature: 0.7,
-    max_tokens: 300,
+export const askChatGPT  = async (prompt: string): Promise<string> => {
+  const response = await openai.chat.completions.create({
+    model: 'gpt-3.5-turbo', 
+    messages: [{ role: 'user', content: prompt }],
   });
 
-  return response.data.choices[0].message?.content?.trim() || 'No response';
+  return response.choices[0]?.message?.content ?? '🤖 No response';
 };

@@ -11,7 +11,7 @@ const isProd = process.env.NODE_ENV === 'production';
   mode: isProd ? 'production' : 'development',	  
   entry: './src/frontend/index.tsx',
  output: {
-  path: path.resolve(__dirname, 'dist'),
+  path: path.resolve(__dirname, 'build'),
   filename: '[name].[contenthash].js', // <-- dynamic filename
   publicPath: '/', 
   clean: true,
@@ -62,6 +62,7 @@ const isProd = process.env.NODE_ENV === 'production';
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+	  filename: 'index.html',
     }),
 	isProd && new BundleAnalyzerPlugin(),
     isProd && new CompressionPlugin(),

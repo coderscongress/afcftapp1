@@ -1,0 +1,103 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.afcftaBuyerListings = void 0;
+exports.afcftaBuyerListings = [
+    {
+        id: 1,
+        productCode: 'GH-Cocoa-1000', productBuyerCode: 'AfCFTA-PBC-01000000',
+        buyerCompanyName: 'Golden Tree Chocolates',
+        buyerCountry: 'Côte d’Ivoire',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'XOF',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 2,
+        productCode: 'GH-Coffee-1000', productBuyerCode: 'AfCFTA-PBC-01000001',
+        buyerCompanyName: 'Espresso Coffee Ltd',
+        buyerCountry: 'South Africa',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'ZAR',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 3,
+        productCode: 'GH-Gold-1000', productBuyerCode: 'AfCFTA-PBC-01000002',
+        buyerCompanyName: 'Goldfields Ltd',
+        buyerCountry: 'South Africa',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'ZAR',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 4,
+        productCode: 'GH-Cocoa-1000', productBuyerCode: 'AfCFTA-PBC-01000003',
+        buyerCompanyName: 'Dream Design Chocolates',
+        buyerCountry: 'Côte d’Ivoire',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'XOF',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 5,
+        productCode: 'GH-Crudeoil-1000', productBuyerCode: 'AfCFTA-PBC-01000004',
+        buyerCompanyName: 'Star Oil GHana Ltd',
+        buyerCountry: 'South Africa',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'ZAR',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 6,
+        productCode: 'GH-Mango-1000', productBuyerCode: 'AfCFTA-PBC-01000005',
+        buyerCompanyName: 'Golden Mangoes Ltd',
+        buyerCountry: 'South Africa',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'ZAR',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+    {
+        id: 7,
+        productCode: 'GH-Silver-1000', productBuyerCode: 'AfCFTA-PBC-01000006',
+        buyerCompanyName: 'Silver Star Ltd',
+        buyerCountry: 'South Africa',
+        quantity: 1000,
+        WhatsApp: '+233558357115', Email: 'buyer@example.com',
+        phoneNumber: '+233558357115',
+        currencyCode: 'ZAR',
+        buyerTIN: 'GH-EXP-0012345',
+        tradeDocumentsAvailable: true,
+        transportMode: ['Sea', 'Road'],
+        paymentTerms: 'LC/TT/Negotiable'
+    },
+];

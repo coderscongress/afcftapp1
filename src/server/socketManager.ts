@@ -5,7 +5,7 @@
 
 import { Server, Socket } from 'socket.io';
 import { MessageData } from './types';
-import { fetchOpenAIResponse } from './utils/openaiHelper';
+import { askChatGPT } from './openaiHelper';
 
 const activeRooms: Record<string, { [socketId: string]: string }> = {};
 
@@ -30,7 +30,7 @@ export const socketManager = (io: Server) => {
       io.to(roomId).emit('chatgpt-response-start');
 
       try {
-        const answer = await fetchOpenAIResponse(latestMessage);
+        const answer = await askChatGPT(latestMessage);
 
         const chatGPTMessage: MessageData = {
           sender: 'ChatGPT',
