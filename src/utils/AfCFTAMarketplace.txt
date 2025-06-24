@@ -1,1 +1,0 @@
-AfCFTAMarketplace: The app can serve as a marketplace where large-scale buyers (like refineries or gold manufacturers) and smaller-scale traders or farmers can find and negotiate trade deals. For instance, a small cocoa farmer in Ghana can list his product for sale in the app, while a large chocolate manufacturer in Europe can place an order for 100 metric tons.
